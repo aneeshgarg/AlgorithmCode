@@ -4,9 +4,10 @@ __author__ = 'Aneesh Garg'
 import random
 from List import List
 import MergeSort
+import QuickSort
 
 
-N = 15
+N = 25
 
 
 data = []
@@ -20,6 +21,10 @@ mergeSort = MergeSort.MergeSort(MergeSort.ASC)
 sortedList = mergeSort.sort(list)
 print(sortedList.printList())
 """
+
+quickSort = QuickSort.QuickSort(QuickSort.FIRST_PIVOT);
+sortedData = quickSort.sort(data[:])
+print(sortedData)
 
 
 

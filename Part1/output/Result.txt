@@ -1,0 +1,943 @@
+*************************Input Size: 10*************************
+
+Merge Sort:
+Random Order: 0.0007000207901000976
+Sorted Order: 0.0006999969482421875
+Reverse Sorted Order: 0.0010001182556152344
+
+Heap Sort:
+Random Order: 0.0012000083923339843
+Sorted Order: 0.0009999990463256836
+Reverse Sorted Order: 0.00030009746551513673
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 9.999275207519531e-05
+Sorted Order: 0.00019998550415039061
+Reverse Sorted Order: 0.00020000934600830078
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.00020000934600830078
+Sorted Order: 0.0
+Reverse Sorted Order: 0.00019998550415039061
+
+
+*************************Input Size: 20*************************
+
+Merge Sort:
+Random Order: 0.00010008811950683594
+Sorted Order: 0.00020000934600830078
+Reverse Sorted Order: 9.999275207519531e-05
+
+Heap Sort:
+Random Order: 0.0006000041961669922
+Sorted Order: 0.0007001161575317383
+Reverse Sorted Order: 0.0005000114440917968
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.00039997100830078123
+Sorted Order: 0.0008001089096069336
+Reverse Sorted Order: 0.0003999948501586914
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0007001161575317383
+Sorted Order: 0.00020000934600830078
+Reverse Sorted Order: 0.0004999876022338867
+
+
+*************************Input Size: 30*************************
+
+Merge Sort:
+Random Order: 0.00020003318786621094
+Sorted Order: 0.00020008087158203126
+Reverse Sorted Order: 0.00040001869201660155
+
+Heap Sort:
+Random Order: 0.000599980354309082
+Sorted Order: 0.0005001068115234375
+Reverse Sorted Order: 0.0005000114440917968
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0007000923156738281
+Sorted Order: 0.00040001869201660155
+Reverse Sorted Order: 0.0003000020980834961
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0003000020980834961
+Sorted Order: 0.00019998550415039061
+Reverse Sorted Order: 0.00030009746551513673
+
+
+*************************Input Size: 40*************************
+
+Merge Sort:
+Random Order: 0.0009000062942504883
+Sorted Order: 0.00030009746551513673
+Reverse Sorted Order: 0.0003999948501586914
+
+Heap Sort:
+Random Order: 0.0006000041961669922
+Sorted Order: 0.0007000923156738281
+Reverse Sorted Order: 0.0009999752044677734
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0005001068115234375
+Sorted Order: 0.00040001869201660155
+Reverse Sorted Order: 0.0003999948501586914
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.00029997825622558595
+Sorted Order: 0.0003000020980834961
+Reverse Sorted Order: 0.00030012130737304686
+
+
+*************************Input Size: 50*************************
+
+Merge Sort:
+Random Order: 0.0003999948501586914
+Sorted Order: 0.0003999948501586914
+Reverse Sorted Order: 0.0005000829696655273
+
+Heap Sort:
+Random Order: 0.0006000041961669922
+Sorted Order: 0.000599980354309082
+Reverse Sorted Order: 0.0008001089096069336
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.00040001869201660155
+Sorted Order: 0.0005001068115234375
+Reverse Sorted Order: 0.0003999948501586914
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.00040001869201660155
+Sorted Order: 0.00019998550415039061
+Reverse Sorted Order: 0.000700068473815918
+
+
+*************************Input Size: 60*************************
+
+Merge Sort:
+Random Order: 0.0006000280380249023
+Sorted Order: 0.0003000020980834961
+Reverse Sorted Order: 0.0007000923156738281
+
+Heap Sort:
+Random Order: 0.0007999897003173828
+Sorted Order: 0.0006000995635986328
+Reverse Sorted Order: 0.0009999990463256836
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0006000995635986328
+Sorted Order: 0.0006000041961669922
+Reverse Sorted Order: 0.0004001140594482422
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0003999948501586914
+Sorted Order: 0.0003999948501586914
+Reverse Sorted Order: 0.0005000114440917968
+
+
+*************************Input Size: 70*************************
+
+Merge Sort:
+Random Order: 0.0006000757217407227
+Sorted Order: 0.000800013542175293
+Reverse Sorted Order: 0.0006000757217407227
+
+Heap Sort:
+Random Order: 0.0013001203536987306
+Sorted Order: 0.0006999731063842774
+Reverse Sorted Order: 0.0011001110076904296
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.000599980354309082
+Sorted Order: 0.000600123405456543
+Reverse Sorted Order: 0.000599980354309082
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0005001068115234375
+Sorted Order: 0.0006000041961669922
+Reverse Sorted Order: 0.0006999969482421875
+
+
+*************************Input Size: 80*************************
+
+Merge Sort:
+Random Order: 0.0008000850677490235
+Sorted Order: 0.0003999948501586914
+Reverse Sorted Order: 0.000700068473815918
+
+Heap Sort:
+Random Order: 0.0010000228881835937
+Sorted Order: 0.0012000799179077148
+Reverse Sorted Order: 0.0012001276016235351
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0010999917984008789
+Sorted Order: 0.0007000923156738281
+Reverse Sorted Order: 0.0005000114440917968
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0007000923156738281
+Sorted Order: 0.0006000041961669922
+Reverse Sorted Order: 0.0006999969482421875
+
+
+*************************Input Size: 90*************************
+
+Merge Sort:
+Random Order: 0.000900101661682129
+Sorted Order: 0.0005000114440917968
+Reverse Sorted Order: 0.0007001161575317383
+
+Heap Sort:
+Random Order: 0.001500105857849121
+Sorted Order: 0.0010999917984008789
+Reverse Sorted Order: 0.001399993896484375
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.000900101661682129
+Sorted Order: 0.0007999897003173828
+Reverse Sorted Order: 0.0008001089096069336
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0006000041961669922
+Sorted Order: 0.0005001068115234375
+Reverse Sorted Order: 0.0006000280380249023
+
+
+*************************Input Size: 100*************************
+
+Merge Sort:
+Random Order: 0.000599980354309082
+Sorted Order: 0.00020000934600830078
+Reverse Sorted Order: 0.0004999876022338867
+
+Heap Sort:
+Random Order: 0.0010001182556152344
+Sorted Order: 0.0007999897003173828
+Reverse Sorted Order: 0.0010999679565429688
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.00039997100830078123
+Sorted Order: 0.0005000114440917968
+Reverse Sorted Order: 0.00030009746551513673
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0003000020980834961
+Sorted Order: 0.00010001659393310547
+Reverse Sorted Order: 0.00030012130737304686
+
+
+*************************Input Size: 200*************************
+
+Merge Sort:
+Random Order: 0.001199960708618164
+Sorted Order: 0.00030009746551513673
+Reverse Sorted Order: 0.0009999990463256836
+
+Heap Sort:
+Random Order: 0.0017000913619995117
+Sorted Order: 0.0018001079559326171
+Reverse Sorted Order: 0.002400064468383789
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0008001089096069336
+Sorted Order: 0.0010999917984008789
+Reverse Sorted Order: 9.999275207519531e-05
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0005000114440917968
+Sorted Order: 0.0005001068115234375
+Reverse Sorted Order: 0.000599980354309082
+
+
+*************************Input Size: 300*************************
+
+Merge Sort:
+Random Order: 0.002000093460083008
+Sorted Order: 0.0005000829696655273
+Reverse Sorted Order: 0.0014000177383422852
+
+Heap Sort:
+Random Order: 0.0031001091003417967
+Sorted Order: 0.0025001287460327147
+Reverse Sorted Order: 0.0039001226425170897
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0013001203536987306
+Sorted Order: 0.0016000986099243164
+Reverse Sorted Order: 0.001500105857849121
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.000800013542175293
+Sorted Order: 0.0005000829696655273
+Reverse Sorted Order: 0.0010001182556152344
+
+
+*************************Input Size: 400*************************
+
+Merge Sort:
+Random Order: 0.0027000904083251953
+Sorted Order: 0.000600123405456543
+Reverse Sorted Order: 0.002100086212158203
+
+Heap Sort:
+Random Order: 0.004400205612182617
+Sorted Order: 0.003600192070007324
+Reverse Sorted Order: 0.006100201606750488
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0021001577377319338
+Sorted Order: 0.002300119400024414
+Reverse Sorted Order: 0.0021001100540161133
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0013000965118408203
+Sorted Order: 0.001200103759765625
+Reverse Sorted Order: 0.001500082015991211
+
+
+*************************Input Size: 500*************************
+
+Merge Sort:
+Random Order: 0.0034001827239990234
+Sorted Order: 0.000900101661682129
+Reverse Sorted Order: 0.0019999980926513673
+
+Heap Sort:
+Random Order: 0.005300283432006836
+Sorted Order: 0.004700303077697754
+Reverse Sorted Order: 0.007400369644165039
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.0025002002716064454
+Sorted Order: 0.002400112152099609
+Reverse Sorted Order: 0.0025002241134643556
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.001500082015991211
+Sorted Order: 0.001200103759765625
+Reverse Sorted Order: 0.0023000955581665037
+
+
+*************************Input Size: 600*************************
+
+Merge Sort:
+Random Order: 0.004100227355957031
+Sorted Order: 0.0010999679565429688
+Reverse Sorted Order: 0.0034001827239990234
+
+Heap Sort:
+Random Order: 0.006200385093688965
+Sorted Order: 0.006000447273254395
+Reverse Sorted Order: 0.009200501441955566
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.002900218963623047
+Sorted Order: 0.003000211715698242
+Reverse Sorted Order: 0.0035001754760742186
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0017000913619995117
+Sorted Order: 0.001200103759765625
+Reverse Sorted Order: 0.00260009765625
+
+
+*************************Input Size: 700*************************
+
+Merge Sort:
+Random Order: 0.0050002336502075195
+Sorted Order: 0.0011001110076904296
+Reverse Sorted Order: 0.0036001682281494142
+
+Heap Sort:
+Random Order: 0.0076004981994628905
+Sorted Order: 0.006700372695922852
+Reverse Sorted Order: 0.010600590705871582
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.003400278091430664
+Sorted Order: 0.0034002065658569336
+Reverse Sorted Order: 0.0034002065658569336
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.002000117301940918
+Sorted Order: 0.001500105857849121
+Reverse Sorted Order: 0.0034002065658569336
+
+
+*************************Input Size: 800*************************
+
+Merge Sort:
+Random Order: 0.006000304222106933
+Sorted Order: 0.001200103759765625
+Reverse Sorted Order: 0.004500174522399902
+
+Heap Sort:
+Random Order: 0.008600544929504395
+Sorted Order: 0.007800483703613281
+Reverse Sorted Order: 0.012300705909729004
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.004500293731689453
+Sorted Order: 0.005200099945068359
+Reverse Sorted Order: 0.005200314521789551
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0031000614166259766
+Sorted Order: 0.0028002023696899413
+Reverse Sorted Order: 0.004800224304199218
+
+
+*************************Input Size: 900*************************
+
+Merge Sort:
+Random Order: 0.009500503540039062
+Sorted Order: 0.0019001007080078126
+Reverse Sorted Order: 0.006700372695922852
+
+Heap Sort:
+Random Order: 0.013400816917419433
+Sorted Order: 0.012000727653503417
+Reverse Sorted Order: 0.01870110034942627
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.005900287628173828
+Sorted Order: 0.006000423431396484
+Reverse Sorted Order: 0.005700325965881348
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.003400301933288574
+Sorted Order: 0.0029001235961914062
+Reverse Sorted Order: 0.005500364303588867
+
+
+*************************Input Size: 1000*************************
+
+Merge Sort:
+Random Order: 0.010500574111938476
+Sorted Order: 0.0020000696182250976
+Reverse Sorted Order: 0.007100391387939453
+
+Heap Sort:
+Random Order: 0.014600777626037597
+Sorted Order: 0.013500714302062988
+Reverse Sorted Order: 0.022301292419433592
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.008200526237487793
+Sorted Order: 0.007700490951538086
+Reverse Sorted Order: 0.00910041332244873
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.004100322723388672
+Sorted Order: 0.003000211715698242
+Reverse Sorted Order: 0.006700396537780762
+
+
+*************************Input Size: 2000*************************
+
+Merge Sort:
+Random Order: 0.02780160903930664
+Sorted Order: 0.0037002801895141602
+Reverse Sorted Order: 0.017000913619995117
+
+Heap Sort:
+Random Order: 0.031601881980895995
+Sorted Order: 0.03190178871154785
+Reverse Sorted Order: 0.04690268039703369
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.013800811767578126
+Sorted Order: 0.014200782775878907
+Reverse Sorted Order: 0.014000797271728515
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.009200429916381836
+Sorted Order: 0.006800365447998047
+Reverse Sorted Order: 0.013800859451293945
+
+
+*************************Input Size: 3000*************************
+
+Merge Sort:
+Random Order: 0.04580256938934326
+Sorted Order: 0.005600404739379883
+Reverse Sorted Order: 0.02960159778594971
+
+Heap Sort:
+Random Order: 0.0510028600692749
+Sorted Order: 0.046102714538574216
+Reverse Sorted Order: 0.07280423641204833
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.02110106945037842
+Sorted Order: 0.021501326560974122
+Reverse Sorted Order: 0.02150118350982666
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.01390078067779541
+Sorted Order: 0.010800695419311524
+Reverse Sorted Order: 0.021401119232177735
+
+
+*************************Input Size: 4000*************************
+
+Merge Sort:
+Random Order: 0.08310480117797851
+Sorted Order: 0.00760040283203125
+Reverse Sorted Order: 0.042302513122558595
+
+Heap Sort:
+Random Order: 0.06820380687713623
+Sorted Order: 0.06300363540649415
+Reverse Sorted Order: 0.10170581340789794
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.03000168800354004
+Sorted Order: 0.029401731491088868
+Reverse Sorted Order: 0.030101633071899413
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.018201112747192383
+Sorted Order: 0.01390070915222168
+Reverse Sorted Order: 0.030101609230041505
+
+
+*************************Input Size: 5000*************************
+
+Merge Sort:
+Random Order: 0.0940054178237915
+Sorted Order: 0.009500598907470703
+Reverse Sorted Order: 0.059403395652770995
+
+Heap Sort:
+Random Order: 0.08920512199401856
+Sorted Order: 0.08240468502044677
+Reverse Sorted Order: 0.1316075563430786
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.03800222873687744
+Sorted Order: 0.03680210113525391
+Reverse Sorted Order: 0.03800220489501953
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.025201416015625
+Sorted Order: 0.017100977897644042
+Reverse Sorted Order: 0.039202117919921876
+
+
+*************************Input Size: 6000*************************
+
+Merge Sort:
+Random Order: 0.12610721588134766
+Sorted Order: 0.011200594902038574
+Reverse Sorted Order: 0.07780449390411377
+
+Heap Sort:
+Random Order: 0.11020629405975342
+Sorted Order: 0.10110578536987305
+Reverse Sorted Order: 0.16640946865081788
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.04560263156890869
+Sorted Order: 0.04530248641967773
+Reverse Sorted Order: 0.045102596282958984
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.03020179271697998
+Sorted Order: 0.023301291465759277
+Reverse Sorted Order: 0.046802735328674315
+
+
+*************************Input Size: 7000*************************
+
+Merge Sort:
+Random Order: 0.16350929737091063
+Sorted Order: 0.013200807571411132
+Reverse Sorted Order: 0.0987055778503418
+
+Heap Sort:
+Random Order: 0.12900724411010742
+Sorted Order: 0.11960690021514893
+Reverse Sorted Order: 0.19181084632873535
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.05320298671722412
+Sorted Order: 0.05340299606323242
+Reverse Sorted Order: 0.05370306968688965
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.0350020170211792
+Sorted Order: 0.027301621437072755
+Reverse Sorted Order: 0.05560305118560791
+
+
+*************************Input Size: 8000*************************
+
+Merge Sort:
+Random Order: 0.21651239395141603
+Sorted Order: 0.015900897979736327
+Reverse Sorted Order: 0.12500710487365724
+
+Heap Sort:
+Random Order: 0.15080866813659669
+Sorted Order: 0.14860851764678956
+Reverse Sorted Order: 0.22411274909973145
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.06170351505279541
+Sorted Order: 0.06110363006591797
+Reverse Sorted Order: 0.06130340099334717
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.041002416610717775
+Sorted Order: 0.030601692199707032
+Reverse Sorted Order: 0.06460380554199219
+
+
+*************************Input Size: 9000*************************
+
+Merge Sort:
+Random Order: 0.2544144630432129
+Sorted Order: 0.016901016235351562
+Reverse Sorted Order: 0.15020861625671386
+
+Heap Sort:
+Random Order: 0.16700963973999022
+Sorted Order: 0.1546088218688965
+Reverse Sorted Order: 0.2515144348144531
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.07040398120880127
+Sorted Order: 0.06890380382537842
+Reverse Sorted Order: 0.06810386180877685
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.046602725982666016
+Sorted Order: 0.03320188522338867
+Reverse Sorted Order: 0.07390422821044922
+
+
+*************************Input Size: 10000*************************
+
+Merge Sort:
+Random Order: 0.3082176923751831
+Sorted Order: 0.018801116943359376
+Reverse Sorted Order: 0.18341050148010254
+
+Heap Sort:
+Random Order: 0.18781070709228515
+Sorted Order: 0.17381002902984619
+Reverse Sorted Order: 0.28231611251831057
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.07730438709259033
+Sorted Order: 0.08120460510253906
+Reverse Sorted Order: 0.07830443382263183
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.05060288906097412
+Sorted Order: 0.036102128028869626
+Reverse Sorted Order: 0.0833047866821289
+
+
+*************************Input Size: 20000*************************
+
+Merge Sort:
+Random Order: 1.2110692024230958
+Sorted Order: 0.03830230236053467
+Reverse Sorted Order: 0.7158409118652344
+
+Heap Sort:
+Random Order: 0.4145238161087036
+Sorted Order: 0.3969226837158203
+Reverse Sorted Order: 0.6341362714767456
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.1659095287322998
+Sorted Order: 0.16920967102050782
+Reverse Sorted Order: 0.16580934524536134
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.11020629405975342
+Sorted Order: 0.08000462055206299
+Reverse Sorted Order: 0.18291041851043702
+
+
+*************************Input Size: 30000*************************
+
+Merge Sort:
+Random Order: 2.7394566774368285
+Sorted Order: 0.05890340805053711
+Reverse Sorted Order: 1.5582890510559082
+
+Heap Sort:
+Random Order: 0.6552374124526977
+Sorted Order: 0.6158352851867676
+Reverse Sorted Order: 0.9721553802490235
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.2532145261764526
+Sorted Order: 0.2580147981643677
+Reverse Sorted Order: 0.2527144193649292
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.16750962734222413
+Sorted Order: 0.13110749721527098
+Reverse Sorted Order: 0.2774158000946045
+
+
+*************************Input Size: 40000*************************
+
+Merge Sort:
+Random Order: 5.00448625087738
+Sorted Order: 0.07920448780059815
+Reverse Sorted Order: 2.7502573013305662
+
+Heap Sort:
+Random Order: 0.8988513708114624
+Sorted Order: 0.8157467126846314
+Reverse Sorted Order: 1.414380931854248
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.38132176399230955
+Sorted Order: 0.3884223222732544
+Reverse Sorted Order: 0.3950223922729492
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.2668152809143066
+Sorted Order: 0.18541064262390136
+Reverse Sorted Order: 0.45822629928588865
+
+
+*************************Input Size: 50000*************************
+
+Merge Sort:
+Random Order: 8.15946671962738
+Sorted Order: 0.09950559139251709
+Reverse Sorted Order: 4.333847880363464
+
+Heap Sort:
+Random Order: 1.1275643825531005
+Sorted Order: 1.0871622085571289
+Reverse Sorted Order: 1.758600616455078
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.4697268962860107
+Sorted Order: 0.4669266939163208
+Reverse Sorted Order: 0.47892730236053466
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.32821881771087646
+Sorted Order: 0.29961721897125243
+Reverse Sorted Order: 0.5234298944473267
+
+
+*************************Input Size: 60000*************************
+
+Merge Sort:
+Random Order: 12.352706384658813
+Sorted Order: 0.17120988368988038
+Reverse Sorted Order: 6.33826253414154
+
+Heap Sort:
+Random Order: 1.4196812868118287
+Sorted Order: 1.2712726831436156
+Reverse Sorted Order: 2.099720072746277
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.5410310506820679
+Sorted Order: 0.5373308181762695
+Reverse Sorted Order: 0.5585319042205811
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.3852221012115479
+Sorted Order: 0.30831756591796877
+Reverse Sorted Order: 0.6648380041122437
+
+
+*************************Input Size: 70000*************************
+
+Merge Sort:
+Random Order: 16.437140107154846
+Sorted Order: 0.1418081283569336
+Reverse Sorted Order: 8.816304206848145
+
+Heap Sort:
+Random Order: 1.687996506690979
+Sorted Order: 2.0032145738601685
+Reverse Sorted Order: 2.4028374671936037
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.6239356756210327
+Sorted Order: 0.6257358074188233
+Reverse Sorted Order: 0.6248358011245727
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.4079233169555664
+Sorted Order: 0.31781806945800783
+Reverse Sorted Order: 0.7490429162979126
+
+
+*************************Input Size: 80000*************************
+
+Merge Sort:
+Random Order: 20.456669974327088
+Sorted Order: 0.1429081678390503
+Reverse Sorted Order: 10.906123828887939
+
+Heap Sort:
+Random Order: 1.7510002374649047
+Sorted Order: 1.5819905042648315
+Reverse Sorted Order: 2.5960484981536864
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.6945396184921264
+Sorted Order: 0.7092406272888183
+Reverse Sorted Order: 0.6704383373260498
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.47152702808380126
+Sorted Order: 0.32061841487884524
+Reverse Sorted Order: 0.7970455884933472
+
+
+*************************Input Size: 90000*************************
+
+Merge Sort:
+Random Order: 26.651624298095705
+Sorted Order: 0.17290990352630614
+Reverse Sorted Order: 13.757786870002747
+
+Heap Sort:
+Random Order: 2.063718008995056
+Sorted Order: 2.0588176965713503
+Reverse Sorted Order: 3.386793613433838
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 0.8110464096069336
+Sorted Order: 0.8586491107940674
+Reverse Sorted Order: 0.9121521949768067
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.702740216255188
+Sorted Order: 0.48682777881622313
+Reverse Sorted Order: 0.9345533609390259
+
+
+*************************Input Size: 100000*************************
+
+Merge Sort:
+Random Order: 34.25425915718078
+Sorted Order: 0.20911202430725098
+Reverse Sorted Order: 18.443755006790163
+
+Heap Sort:
+Random Order: 2.4088377714157105
+Sorted Order: 2.133322024345398
+Reverse Sorted Order: 3.636608099937439
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 1.0300589084625245
+Sorted Order: 1.0240585327148437
+Reverse Sorted Order: 1.0417595863342286
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.712740707397461
+Sorted Order: 0.5380308151245117
+Reverse Sorted Order: 1.1004630088806153
+
+
+*************************Input Size: 125000*************************
+
+Merge Sort:
+Random Order: 59.728116273880005
+Sorted Order: 0.27351572513580324
+Reverse Sorted Order: 27.347064232826234
+
+Heap Sort:
+Random Order: 3.038073778152466
+Sorted Order: 2.855763292312622
+Reverse Sorted Order: 4.7000689029693605
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 1.2186697244644165
+Sorted Order: 1.2123694181442262
+Reverse Sorted Order: 1.2382708072662354
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 0.8358478784561157
+Sorted Order: 0.661437726020813
+Reverse Sorted Order: 1.5504887104034424
+
+
+*************************Input Size: 150000*************************
+
+Merge Sort:
+Random Order: 87.1917870759964
+Sorted Order: 0.23261332511901855
+Reverse Sorted Order: 46.67916991710663
+
+Heap Sort:
+Random Order: 3.7635151624679564
+Sorted Order: 3.4890995979309083
+Reverse Sorted Order: 5.75362913608551
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 1.5254873037338257
+Sorted Order: 1.5693897485733033
+Reverse Sorted Order: 1.5567890882492066
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 1.0800618410110474
+Sorted Order: 0.8147465229034424
+Reverse Sorted Order: 1.7965028047561646
+
+
+*************************Input Size: 175000*************************
+
+Merge Sort:
+Random Order: 124.87574245929719
+Sorted Order: 0.3586205244064331
+Reverse Sorted Order: 71.17687110900879
+
+Heap Sort:
+Random Order: 4.465455508232116
+Sorted Order: 4.128236079216004
+Reverse Sorted Order: 6.77068727016449
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 1.739899492263794
+Sorted Order: 1.7952025890350343
+Reverse Sorted Order: 1.8882081270217896
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 1.2937739849090577
+Sorted Order: 0.9420539140701294
+Reverse Sorted Order: 2.1922253608703612
+
+
+*************************Input Size: 200000*************************
+
+Merge Sort:
+Random Order: 178.84472932815552
+Sorted Order: 0.402223014831543
+Reverse Sorted Order: 84.0549076795578
+
+Heap Sort:
+Random Order: 4.722269988059997
+Sorted Order: 4.253543257713318
+Reverse Sorted Order: 6.787688279151917
+
+In-place Quick Sort with Random Pivot: 
+Random Order: 1.696197009086609
+Sorted Order: 1.6134921789169312
+Reverse Sorted Order: 2.0259159088134764
+
+Modified Quick Sort with Median of Three Pivot: 
+Random Order: 1.1899681091308594
+Sorted Order: 1.1625665187835694
+Reverse Sorted Order: 2.4442398071289064
+
+

@@ -1,6 +1,7 @@
 __author__ = 'Aneesh Garg'
 
 import random
+import math
 
 FIRST_PIVOT = "First"
 LAST_PIVOT = "Last"
@@ -17,49 +18,44 @@ class QuickSort:
         return self.inPlaceQuickSort(data,0,len(data)-1)
 
     def inPlaceQuickSort(self, data, left, right):
-        size = right-left
-        if (size > 10):
-            print("InPlace Quick sort on input size = " + str(size))
-            if left > right:
-                return data
-            pivotIndex = self.getPivotRank(data, left, right)
-            pivot = data[pivotIndex]
-            print(pivot)
-            h, k = self.inPlacePartition(data, pivot, left, right)
-            #print(data)
-            data = self.inPlaceQuickSort(data, left, h-1)
-            data = self.inPlaceQuickSort(data, k + 1, right)
+        size = right - left + 1
+        #print("InPlace Quick sort on input size = " + str(size))
+        if left >= right:
+            return data
+        if not self.modifiedSort or (size > 10 and self.modifiedSort):
+            pivotIndex, data = self.getPivotRank(data, left, right)
+            #print(str(data) + " pivotIndex=" + str(pivotIndex))
+            newPivotIndex, data = self.inPlacePartition(data, left, right, pivotIndex)
+            #print(str(data) + " newPivotIndex=" + str(newPivotIndex))
+            data = self.inPlaceQuickSort(data, left, newPivotIndex-1)
+            data = self.inPlaceQuickSort(data, newPivotIndex + 1, right)
         else:
-            data[left:right] = self.insertionSort(data[left:right])
+            data = self.insertionSort(data, left, right)
         return data
 
-    def insertionSort(self,data):
-        size = len(data)
-        print("Insertion sort on input size = " + str(size))
-        for j in range(1,size):
+    def insertionSort(self, data, left, right):
+        size = right - left + 1
+        #print("Insertion sort on input size = " + str(size))
+        for j in range(left, right + 1):
             #print(str(j)+"  "+str(data[j]))
             key = data[j]
-            i = j-1
-            while i>=0 and data[i] > key:
+            i = j - 1
+            while i >= 0 and data[i] > key:
                 data[i+1] = data[i]
                 i -= 1
                 data[i+1] = key
         return data
 
-    def inPlacePartition(self, data, pivot, minimum, maximum):
-        j = minimum
-        k = maximum
-        size = len(data)
-        while j < k:
-            while data[j] < pivot and j < size:
-                j += 1
-
-            while data[k] > pivot and k >= 0:
-                k -= 1
-
-            data[j], data[k] = data[k], data[j]
-            print(str(minimum) +"-"+str(maximum) + str(data))
-        return j, k
+    def inPlacePartition(self, data, left, right, pivotIndex):
+        pivotValue = data[pivotIndex]
+        data[pivotIndex], data[right] = data[right], data[pivotIndex] #Move pivot to the end
+        storeIndex = left
+        for i in range(left, right):
+            if data[i] <= pivotValue:
+                data[i], data[storeIndex] = data[storeIndex], data[i]
+                storeIndex += 1
+        data[storeIndex], data[right] = data[right], data[storeIndex]
+        return storeIndex, data
 
     def getPivotRank(self, data, minimum, maximum):
         rank = random.randint(minimum, maximum)
@@ -67,5 +63,14 @@ class QuickSort:
             rank = minimum
         elif self.pivotMode == LAST_PIVOT:
             rank = maximum
-        return rank
+        elif self.pivotMode == MEDIAN_PIVOT:
+            center = math.floor((minimum + maximum)/2)
+            if data[center] < data[minimum]:
+                data[center], data[minimum] = data[minimum], data[center]
+            if data[maximum] < data[minimum]:
+                data[maximum], data[minimum] = data[minimum], data[maximum]
+            if data[maximum] < data[center]:
+                data[maximum], data[center] = data[center], data[maximum]
+            rank = center
+        return rank, data
 

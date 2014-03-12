@@ -1,59 +1,38 @@
 __author__ = 'Aneesh Garg'
 
-
-from List import List
-
 ASC = "Ascending"
 DESC = "Descending"
 
 class MergeSort:
 
-    def __init__(self, mode):
+    def __init__(self, mode = ASC):
         self.mode = mode
 
-    def sort(self, list):
-        #print(list.size)
-        if list.size > 1:
-            list1, list2 = self.partition(list)
-            #print(list1.printList() + "     " + list2.printList())
-            list1 = self.sort(list1)
-            list2 = self.sort(list2)
-            return self.merge(list1, list2)
+
+    def mergeSort(self, data):
+        if len(data) <= 1:
+            return data
         else:
-            return List([list.removeFirst()])
-
-    def partition(self, list):
-        list1 = List()
-        list2 = List()
-        current = list.first
-        while current is not None:
-            list1.insertLast(current.key)
-            current = current.next
-            if current is None:
-                break
-            list2.insertLast(current.key)
-            current = current.next
-        return list1, list2
-
-
-    def merge(self, list1, list2):
-        mergedList = List()
-        while not list1.isEmpty() and not list2.isEmpty():
-            condition = None
-            if self.mode == ASC:
-                condition = list1.first.key < list2.first.key
+            center = int(len(data)/2)
+            left, right = data[:center], data[center:]
+            left = self.mergeSort(left)
+            right = self.mergeSort(right)
+            if left[-1] <= right[0]:
+                return left + right
             else:
-                condition = list1.first.key > list2.first.key
-            #print(str(list1.first.key) + "   " + str(list2.first.key)+"   "+str(condition))
-            if condition:
-                mergedList.insertLast(list1.removeFirst())
+                return self.merge(left, right)
+
+    def merge(self, left, right):
+        result = []
+        while len(left) > 0 and len(right) > 0:
+            if left[0] <= right[0]:
+                result.append(left[0])
+                left = left[1:]
             else:
-                mergedList.insertLast(list2.removeFirst())
-
-        while not list1.isEmpty():
-            mergedList.insertLast(list1.removeFirst())
-
-        while not list2.isEmpty():
-            mergedList.insertLast(list2.removeFirst())
-
-        return mergedList
+                result.append(right[0])
+                right = right[1:]
+        if len(left) > 0:
+            result += left
+        if len(right) > 0:
+            result += right
+        return result

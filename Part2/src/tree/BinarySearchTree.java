@@ -36,12 +36,13 @@ public class BinarySearchTree {
 	 * 
 	 * @param key
 	 *            : Key to be inserted.
+	 * @return Reference to the node storing recently inserted item.
 	 */
-	public void insertItem(int key) {
+	public Node insertItem(int key) {
+		Node node = new Node(key);
 		if (isEmpty())
-			root = new Node(key);
+			root = node;
 		else {
-			Node node = new Node(key);
 			Node current = this.root;
 			while (true)
 				if (current.getKey() > key && current.getLeft() != null)
@@ -57,6 +58,7 @@ public class BinarySearchTree {
 			node.setParent(current);
 		}
 		size++;
+		return node;
 	}
 
 	/**
@@ -84,7 +86,15 @@ public class BinarySearchTree {
 	}
 
 	/**
-	 * Removes the node with a given key.
+	 * This unction will delete sindle specified node from binary search tree.<br>
+	 * Deletion of any node from binary search tree can be done under following
+	 * cases:
+	 * <ol>
+	 * <li>Deleting a leaf node</li>
+	 * <li>Deleting a node having only right subtree (empty left subtree)</li>
+	 * <li>Deleting a node having only left subtree (empty right subtree)</li>
+	 * <li>Deleting a node having non-empty left and right subtree</li>
+	 * </ol>
 	 * 
 	 * @param key
 	 *            : Key of the node to be removed
@@ -94,8 +104,9 @@ public class BinarySearchTree {
 	 *             : thrown if key is not present in the tree
 	 * @throws InvalidTreeOperation
 	 *             : thrown if any invalid operation takes place in the tree
+	 * @return reference to the node that was just deleted.
 	 */
-	public void removeItem(int key) throws EmptyTreeException,
+	public Node removeItem(int key) throws EmptyTreeException,
 			KeyNotFoundException, InvalidTreeOperation {
 		if (isEmpty())
 			throw new EmptyTreeException();
@@ -103,60 +114,68 @@ public class BinarySearchTree {
 		if (item == null)
 			throw new KeyNotFoundException("Key " + key + " not found !!!");
 		else {
-			if (item.isLeaf()) {
-				Node parent = item.getParent();
-				if (parent.isRightChild())
-					parent.setRight(null);
-				else
-					parent.setLeft(null);
-			} else if (item.isAboveExternal())
-				removeAboveExternal(item);
-			else {
-				Node next = nextInorder(item);
-				removeAboveExternal(next);
-				next.setParent(item.getParent());
-				next.setLeft(item.getLeft());
-				next.setRight(item.getRight());
-			}
-			size--;
-		}
-	}
-
-	/**
-	 * This method removes a node if any of its children is external node.
-	 * 
-	 * @param item
-	 */
-	public void removeAboveExternal(Node item) {
-		if (item.isAboveExternal()) {
+			Node parent = item.getParent();
 			Node leftChild = item.getLeft();
 			Node rightChild = item.getRight();
-			Node parent = item.getParent();
 
-			if (leftChild != null && rightChild != null) {
-				if (item.isRightChild())
-					parent.setRight(rightChild);
-				else
-					parent.setLeft(rightChild);
+			// Deleting a node (leaf node) or node having only right subtree
+			// (empty left subtree)
+			if (leftChild == null) {
+				if (parent != null) {
+					if (!item.isRightChild())
+						parent.setLeft(rightChild);
+					else
+						parent.setRight(rightChild);
+					if (rightChild != null)
+						rightChild.setParent(parent);
+				} else {
+					this.root = rightChild;
+					if (rightChild != null)
+						rightChild.setParent(null);
+				}
+			} else // Deleting a node having only left subtree (empty right
+					// subtree)
+			if (rightChild == null) {
+				if (parent != null) {
+					if (!item.isRightChild())
+						parent.setLeft(leftChild);
+					else
+						parent.setRight(leftChild);
+					leftChild.setParent(parent);
+				} else {
+					this.root = leftChild;
+					leftChild.setParent(null);
+				}
+			} else // Deleting a node having non-empty left and right subtree
+			{
+				// Finding a node that comes next in inorder traversal
+				Node next = nextInorder(item);
+				next.setLeft(leftChild);
+				leftChild.setParent(next);
+				if (parent != null) {
+					if (!item.isRightChild())
+						parent.setLeft(rightChild);
+					else
+						parent.setRight(rightChild);
+					rightChild.setParent(parent);
+				} else {
+					this.root = rightChild;
+					rightChild.setParent(null);
+				}
 
-				rightChild.setParent(parent);
-
-				rightChild.setLeft(leftChild);
-				leftChild.setParent(rightChild);
-			} else if (leftChild == null && rightChild != null) {
-				rightChild.setParent(parent);
-				if (item.isRightChild())
-					parent.setRight(rightChild);
-				else
-					parent.setLeft(rightChild);
-			} else if (leftChild != null && rightChild == null) {
-				leftChild.setParent(parent);
-				if (item.isRightChild())
-					parent.setRight(leftChild);
-				else
-					parent.setLeft(leftChild);
 			}
+
+			/*
+			 * if (item.isLeaf()) { Node parent = item.getParent(); if
+			 * (parent.isRightChild()) parent.setRight(null); else
+			 * parent.setLeft(null); } else if (item.isAboveExternal())
+			 * removeAboveExternal(item); else { Node next = nextInorder(item);
+			 * // removeAboveExternal(next); next.setParent(item.getParent());
+			 * next.setLeft(item.getLeft()); next.setRight(item.getRight()); }
+			 */
+			size--;
 		}
+		return item;
 	}
 
 	/**

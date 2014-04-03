@@ -33,6 +33,7 @@ public class ImplementPartTwo {
 			
 			BinarySearchTree bst = new BinarySearchTree(numbers);
 			System.out.println("Height: " + bst.getHeight() +" Size: " + bst.getSize());
+			System.out.println();
 			bst.printTree();
 			
 			Collections.shuffle(numbers);
@@ -42,6 +43,7 @@ public class ImplementPartTwo {
 				bst.inOrder(bst.getRoot());
 				System.out.println();
 			}
+			System.out.println("Height: " + bst.getHeight() +" Size: " + bst.getSize());
 		}
 
 	}

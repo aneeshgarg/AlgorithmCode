@@ -1,6 +1,5 @@
 package tree;
 
-
 /**
  * This class denotes a single node in a tree.
  * 
@@ -12,6 +11,10 @@ public class Node {
 	 * Stores the key in node.
 	 */
 	private int key;
+	/**
+	 * It stores balance factor of a node. To be used in AVL tree.
+	 */
+	private int balanceFactor;
 	/**
 	 * Stores reference to left child of the node.
 	 */
@@ -65,7 +68,7 @@ public class Node {
 	public boolean isAboveExternal() {
 		if (isLeaf())
 			return false;
-		else 
+		else
 			return (getLeft() == null || getRight() == null);
 	}
 
@@ -83,6 +86,20 @@ public class Node {
 			else
 				return false;
 		}
+	}
+	/**
+	 * This method calculates the balance factor of this particular node. 
+	 */
+	public int calculateBalanceFactor() {
+		
+		int leftHeight = -1;
+		int rightHeight = -1;
+		if (getLeft() != null)
+			leftHeight = getLeft().getHeight();
+		if (getRight() != null)
+			rightHeight = getRight().getHeight();
+		setBalanceFactor(Math.abs(leftHeight - rightHeight));
+		return Math.abs(leftHeight - rightHeight);
 	}
 
 	/**
@@ -125,6 +142,14 @@ public class Node {
 
 	public void setKey(int key) {
 		this.key = key;
+	}
+
+	public int getBalanceFactor() {
+		return balanceFactor;
+	}
+
+	public void setBalanceFactor(int balanceFactor) {
+		this.balanceFactor = balanceFactor;
 	}
 
 	public Node getLeft() {

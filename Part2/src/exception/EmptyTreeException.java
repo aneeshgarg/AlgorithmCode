@@ -4,7 +4,7 @@ package exception;
  * @author Aneesh Garg
  * 
  */
-public class EmptyTreeException extends Exception {
+public class EmptyTreeException extends InvalidTreeOperation {
 
 	private static final long serialVersionUID = 7274464476691103629L;
 

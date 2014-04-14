@@ -15,7 +15,13 @@ import exception.KeyNotFoundException;
 public class BinarySearchTree {
 	public static boolean DEBUG = true;
 
+	/**
+	 * Stores the reference to the root node of the tree.
+	 */
 	private Node root;
+	/**
+	 * Stores the number of nodes in a tree.
+	 */
 	private int size;
 
 	public BinarySearchTree() {
@@ -24,10 +30,8 @@ public class BinarySearchTree {
 	public BinarySearchTree(ArrayList<Integer> keys) {
 		for (int key : keys) {
 			insertItem(key);
-			if (DEBUG) {
-				inOrder(root);
-				System.out.println();
-			}
+			if (DEBUG)
+				printTree();
 		}
 	}
 
@@ -86,7 +90,7 @@ public class BinarySearchTree {
 	}
 
 	/**
-	 * This unction will delete sindle specified node from binary search tree.<br>
+	 * This function will delete single specified node from binary search tree.<br>
 	 * Deletion of any node from binary search tree can be done under following
 	 * cases:
 	 * <ol>
@@ -164,15 +168,6 @@ public class BinarySearchTree {
 				}
 
 			}
-
-			/*
-			 * if (item.isLeaf()) { Node parent = item.getParent(); if
-			 * (parent.isRightChild()) parent.setRight(null); else
-			 * parent.setLeft(null); } else if (item.isAboveExternal())
-			 * removeAboveExternal(item); else { Node next = nextInorder(item);
-			 * // removeAboveExternal(next); next.setParent(item.getParent());
-			 * next.setLeft(item.getLeft()); next.setRight(item.getRight()); }
-			 */
 			size--;
 		}
 		return item;
@@ -221,17 +216,20 @@ public class BinarySearchTree {
 	 */
 	public void printTree() {
 		Node current = this.root;
-		// Go to the left most node of the tree. this will be the start of
-		// inorder traversal
-		while (current.getLeft() != null)
-			current = current.getLeft();
-		System.out.print("Inorder: " + current.toString());
-		Node next = nextInorder(current);
-		while (next != null) {
-			System.out.print(", " + next.toString());
-			next = nextInorder(next);
-		}
-		System.out.println();
+		if (current != null) {
+			// Go to the left most node of the tree. this will be the start of
+			// inorder traversal
+			while (current.getLeft() != null)
+				current = current.getLeft();
+			System.out.print("Inorder: " + current.toString());
+			Node next = nextInorder(current);
+			while (next != null) {
+				System.out.print(", " + next.toString());
+				next = nextInorder(next);
+			}
+			System.out.println();
+		} else
+			System.out.print("Tree is empty.");
 	}
 
 	public void inOrder(Node node) {

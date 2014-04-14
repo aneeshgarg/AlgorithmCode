@@ -5,7 +5,7 @@ package exception;
  * @author Aneesh Garg
  *
  */
-public class KeyNotFoundException extends Exception {
+public class KeyNotFoundException extends InvalidTreeOperation {
 
 	private static final long serialVersionUID = 2140802301191179455L;
 
